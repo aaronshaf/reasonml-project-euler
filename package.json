@@ -1,5 +1,5 @@
 {
-  "name": "reason-project-euler",
+  "name": "reasonml-project-euler",
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
