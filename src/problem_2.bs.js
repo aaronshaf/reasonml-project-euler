@@ -24,14 +24,11 @@ while(sum[0] < 4000000) {
   prev1[0] = prev2[0];
   prev2[0] = sum[0];
   sum[0] = prev1[0] + prev2[0] | 0;
-  if (!(sum[0] % 2)) {
-    terms[0] = /* :: */[
-      sum[0],
-      terms[0]
-    ];
-    console.log(Pervasives.string_of_int(sum[0]));
-  }
-  
+  terms[0] = /* :: */[
+    sum[0],
+    terms[0]
+  ];
+  console.log(Pervasives.string_of_int(sum[0]));
 };
 
 var max = 4000000;

@@ -15,10 +15,8 @@ while (sum^ < max) {
   prev1 := prev2^;
   prev2 := sum^;
   sum := prev1^ + prev2^;
-  if (sum^ mod 2 === 0) {
-    terms := [sum^, ...terms^];
-    Js.log(string_of_int(sum^))
-  }
+  terms := [sum^, ...terms^];
+  Js.log(string_of_int(sum^))
 };
 /* TODO: find sum of *all* terms? or is that not what the problem calls for... */
 /* TODO: find a way to solve this without mutation */
