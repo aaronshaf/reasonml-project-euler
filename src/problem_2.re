@@ -1,5 +1,5 @@
-/* By considering the terms in the Fibonacci sequence whose values
-   do not exceed four million, find the sum of the even-valued terms. */
+/* "By considering the terms in the Fibonacci sequence whose values
+   do not exceed four million, find the sum of the even-valued terms." */
 let max = 4000000;
 
 /* ref and ^: https://reasonml.github.io/guide/language/mutation */
@@ -20,4 +20,5 @@ while (sum^ < max) {
     Js.log(string_of_int(sum^))
   }
 };
-/* TODO: find sum of all terms? or is that not what the problem calls for... */
+/* TODO: find sum of *all* terms? or is that not what the problem calls for... */
+/* TODO: find a way to solve this without mutation */
