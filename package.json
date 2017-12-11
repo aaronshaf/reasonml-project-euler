@@ -6,10 +6,15 @@
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world"
   },
-  "keywords": ["BuckleScript"],
+  "keywords": [
+    "BuckleScript"
+  ],
   "author": "Aaron Shafovaloff <aaronshaf@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^2.1.0"
+  },
+  "dependencies": {
+    "reason": "^3.0.2"
   }
 }
