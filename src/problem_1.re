@@ -2,10 +2,14 @@
 /* https://projecteuler.net/problem=1 */
 
 /* thanks to glennsl */
-/* rec means recursive */
+/* rec means recursive: https://reasonml.github.io/guide/language/function/ */
 let rec range = (x, y) => x >= y ? [] : [x, ...range(x + 1, y)];
-
 let from1To1000 = range(1, 1000);
+
+/* ^ Is there a ReasonML analogue to lodash? Say, for example,
+I wanted to do range (as above) , but with a standard lib or utility lib */
+
+/* See https://reasonml.github.io/api/List.html */
 let multiples = List.filter(
   (int1: int) => (int1 mod 3 === 0 || int1 mod 5 === 0),
   from1To1000
