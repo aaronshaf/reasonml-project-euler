@@ -1,6 +1,6 @@
 /* By considering the terms in the Fibonacci sequence whose values
    do not exceed four million, find the sum of the even-valued terms. */
-let max = 4000000; /* when ready, change to 4000000 */
+let max = 4000000;
 
 /* ref and ^: https://reasonml.github.io/guide/language/mutation */
 let prev1 = ref(2);
