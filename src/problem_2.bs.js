@@ -9,25 +9,10 @@ var prev2 = [4];
 
 var sum = [6];
 
-var terms = [/* :: */[
-    2,
-    /* :: */[
-      4,
-      /* :: */[
-        6,
-        /* [] */0
-      ]
-    ]
-  ]];
-
 while(sum[0] < 4000000) {
   prev1[0] = prev2[0];
   prev2[0] = sum[0];
   sum[0] = prev1[0] + prev2[0] | 0;
-  terms[0] = /* :: */[
-    sum[0],
-    terms[0]
-  ];
   console.log(Pervasives.string_of_int(sum[0]));
 };
 
@@ -37,5 +22,4 @@ exports.max   = max;
 exports.prev1 = prev1;
 exports.prev2 = prev2;
 exports.sum   = sum;
-exports.terms = terms;
 /*  Not a pure module */
