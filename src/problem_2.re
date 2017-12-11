@@ -18,4 +18,4 @@ while (sum^ < max) {
   Js.log(string_of_int(sum^))
 };
 /* TODO: find sum of *all* terms? or is that not what the problem calls for... */
-/* TODO: find a way to solve this without mutation */
+/* TODO: find a way to solve this without mutation... recursively? */
