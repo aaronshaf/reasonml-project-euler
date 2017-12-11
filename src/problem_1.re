@@ -15,4 +15,4 @@ let multiples = List.filter(
   from1To1000
 );
 
-Js.log(multiples |> Array.of_list)
+Js.log(multiples |> Array.of_list);
