@@ -1,7 +1,14 @@
 /* "Find the sum of all the multiples of 3 or 5 below 1000." */
 /* rec means recursive: https://reasonml.github.io/guide/language/function/
    hat tip: glennsl */
-let rec range = (x, y) => x >= y ? [] : [x, ...range(x + 1, y)];
+let rec range = (x, y) =>
+  /* using if/else for clarity, but we could
+     compact it with ternary expression */
+  if (x >= y) {
+    []
+  } else {
+    [x, ...range(x + 1, y)]
+  };
 
 let from1To1000 = range(1, 1000);
 

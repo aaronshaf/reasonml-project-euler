@@ -5,8 +5,7 @@ var List    = require("bs-platform/lib/js/list.js");
 var $$Array = require("bs-platform/lib/js/array.js");
 
 function range(x, y) {
-  var match = +(x >= y);
-  if (match !== 0) {
+  if (x >= y) {
     return /* [] */0;
   } else {
     return /* :: */[
